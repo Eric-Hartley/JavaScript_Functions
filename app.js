@@ -67,3 +67,32 @@ else if (x > 0 && y < 0) {
 else {
     result = console.log("Not in the Cartesian Plane.");
 }
+// Exercise 4 Section
+console.log("EXERCISE 4:\n==========\n");
+let sideA = 5;
+let sideB = 2;
+let sideC = 4;
+
+if (sideA > 0 && sideB > 0 && sideC > 0) {
+    if (sideA == sideB && sideB == sideC) {
+        console.log(`Sides ${sideA}, ${sideB}, ${sideC} make an Equilateral triangle.`);
+    } else if ((sideA == sideB || sideB == sideC || sideA == sideC) && (sideA != sideC || sideB != sideC || sideA != sideC)) {
+        if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+            console.log(`Sides ${sideA}, ${sideB}, ${sideC} make an Isosceles triangle.`);
+        } else {
+            console.log(`Sides ${sideA}, ${sideB}, ${sideC} do not make a triangle.`);
+        }
+    } else if (sideA != sideB && sideB != sideC && sideC != sideA) {
+        if (sideA + sideB > sideC && sideA + sideC > sideB && sideB + sideC > sideA) {
+            console.log(`Sides ${sideA}, ${sideB}, ${sideC} make Scalene triangle.`);
+        } else {
+            console.log(`Sides ${sideA}, ${sideB}, ${sideC} do not make a triangle.`);
+        }
+    } else {
+        console.log(`Sides ${sideA}, ${sideB}, ${sideC} do not make a triangle.`);
+
+    }
+}
+
+// Exercise 5 Section
+console.log("EXERCISE 5:\n==========\n");
