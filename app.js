@@ -94,5 +94,4 @@ if (sideA > 0 && sideB > 0 && sideC > 0) {
     }
 }
 
-// Exercise 5 Section
-console.log("EXERCISE 5:\n==========\n");
+
